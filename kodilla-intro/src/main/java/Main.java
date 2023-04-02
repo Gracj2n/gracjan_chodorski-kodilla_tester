@@ -5,6 +5,7 @@ public class Main {
         double height = 1.78;
         char carClass = 'A';
         boolean isGoodProgrammer = true;
-        System.out.println(myAge);
+        String firstClassText = "Hello from FirstClass";
+        System.out.println(firstClassText);
     }
 }
