@@ -6,6 +6,5 @@ public class LeapYear {
         } else {
             System.out.println("Nie jest to rok przestępny");
         }
-
     }
 }
