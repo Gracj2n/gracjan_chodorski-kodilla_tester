@@ -12,6 +12,5 @@ public class MainExtended {
         System.out.println(myWeightKg);
         System.out.println(myHeightM);
         System.out.println(exampleText);
-
     }
 }
