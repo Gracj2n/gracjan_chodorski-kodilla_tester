@@ -1,9 +1,10 @@
 public class Grades {
 
 
-    int[] grades;  /* co to i po co taka zmienna? i czemu private */
+    int[] grades;  /* co to i po co taka zmienna? i czemu ma być private */
     int size ;
     int grade;
+
 
     public Grades(int grade) { /* konstruktor */
         this.grades = new int[10];  /* to jest stworzona tablica? */
