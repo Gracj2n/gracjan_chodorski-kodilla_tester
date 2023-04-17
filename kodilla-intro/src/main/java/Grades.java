@@ -2,11 +2,10 @@ public class Grades {
     private int[] grades;  // co to i po co taka zmienna? i czemu ma być private
     private int size;
     private int gradeValue;
-    private int sumOfGrades;
 
     public Grades() {              // konstruktor
         this.grades = new int[10];              //  to jest stworzona tablica?
-        this.size = 3; /* aktualne miejsce w tablicy? */
+        this.size = 0; /* aktualne miejsce w tablicy? */
     }
 
     public void add(int gradeValue) {
@@ -23,12 +22,14 @@ public class Grades {
     }
 
     public void averageOfGrades() {
-        int[] oceny = new int[]{1, 3, 4, 5, 6, 3};
+        //this.grades[] = ;
         double sumOfGrades = 0;
-        for (int a = 0; a < oceny.length; a++) {
-            sumOfGrades += oceny[a];
+        for (int a = 0; a < this.grades.length; a++) {
+            sumOfGrades += this.grades[a];
         }
-        double average = sumOfGrades / oceny.length;
+
+        double average = sumOfGrades / grades.length;
+
         System.out.println(average);
     }
 
