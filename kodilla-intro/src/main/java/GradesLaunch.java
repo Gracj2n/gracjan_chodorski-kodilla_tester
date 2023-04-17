@@ -13,8 +13,5 @@ public class GradesLaunch {
         Grades averageOfGrades = new Grades();
         averageOfGrades.averageOfGrades();
 
-        System.out.println("");
-        Grades show = new Grades();
-        show.showGrades();
     }
 }
