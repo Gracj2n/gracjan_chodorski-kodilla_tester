@@ -7,8 +7,8 @@ public class Book {
         this.title = title;
     }
 
-    public static String of(String author, String title) {
+    public static Book of(String author, String title) {
         System.out.println(author + " " + title);
-        return author + title;
+        return new Book(author, title);
     }
 }
