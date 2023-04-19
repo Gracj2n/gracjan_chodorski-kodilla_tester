@@ -12,4 +12,9 @@ public class RandomNumbers {
         }
         return result;
     }
+    public static void main(String[] asrgs) {
+        RandomNumbers random = new RandomNumbers();
+        System.out.println(random.getCountOfRandomNumber(10));
+    }
+
 }

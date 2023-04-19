@@ -6,6 +6,14 @@ public class GradesLaunch {
         grade.add(4);
         grade.add(5);
         grade.add(6);
+        grade.add(6);
+        grade.add(6);
+        grade.add(6);
+        grade.add(6);
+        grade.add(6);
+        grade.add(4);
+        grade.add(5);
+
         grade.showGrade();
 
         System.out.println(grade.showGrade());

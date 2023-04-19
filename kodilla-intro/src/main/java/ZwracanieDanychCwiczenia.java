@@ -1,8 +1,8 @@
 public class ZwracanieDanychCwiczenia {
+
     public static String say() {
-        String text = "Jakiś przykładowy text";
+        String text = "Jakiś tekst";
 
         return text;
     }
-
 }
