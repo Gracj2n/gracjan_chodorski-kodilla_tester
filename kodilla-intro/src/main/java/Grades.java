@@ -1,7 +1,6 @@
 public class Grades {
-    private int[] grades;                       // co to i po co taka zmienna? i czemu ma być private
+    private int[] grades;                       // czemu ma być private
     private int size;
-    private int gradeValue;
 
     public Grades() {                           // konstruktor
         this.grades = new int[10];              //  to jest stworzona tablica?
@@ -9,7 +8,6 @@ public class Grades {
     }
 
     public void add(int gradeValue) {
-        this.gradeValue = gradeValue;
         if (this.size == 10) {
             return;                              // przerywanie działania
         }
@@ -17,24 +15,23 @@ public class Grades {
         this.size++;
     }
 
-    public void showGrade() {
-        System.out.println("Dodano ocenę " + gradeValue + ".");
+    public int showGrade() {
+        return this.grades[this.size - 1];
+    }
+
+    public double averageOfGrades() {
+        double sumOfGrades = 0; //czemu zero
+        for (int i = 0; i < grades.length; i++) {
+            sumOfGrades = sumOfGrades + this.grades[i];
         }
-
-    public void averageOfGrades() {
-        for (int a = 0; a < grades.length; a++) {
-            //sumOfGrades = sumOfGrades + this.grades[a];
-
-        }
-
-        //double average = sumOfGrades / grades.length;
-        //System.out.println(average);
+        return sumOfGrades / this.size;
     }
 
     //Pokwazywanie Tablicy
-    public void showGrades() {
+    public int[] showGrades() {
         for (int g = 0; g < grades.length; g++) {
             System.out.println("Ocena:" + grades[g]);
         }
+        return this.grades;
     }
 }
