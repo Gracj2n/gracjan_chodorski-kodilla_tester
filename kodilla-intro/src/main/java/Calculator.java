@@ -1,7 +1,7 @@
 public class Calculator {
-    static double PI = 3.1415927;          // [1]
-    static int counter = 0;
-    public Calculator() {
+    static final double PI = 3.1415927;          // [1]
+    static int counter = 0;                 // zmienna statyczna counter
+    public Calculator() {                   // konstruktor
         counter++;
     }
     public double add(double a, double b) {
@@ -13,8 +13,9 @@ public class Calculator {
     }
 
     public double circleArea(double r) {
-        String name = UserDialogs.getUsername();
-        System.out.println(name);
+        //String name = UserDialogs.getUsername();
+        //System.out.println(name);
+        System.out.println(UserDialogs.getUsername());
         return PI * r * r;
     }
 
