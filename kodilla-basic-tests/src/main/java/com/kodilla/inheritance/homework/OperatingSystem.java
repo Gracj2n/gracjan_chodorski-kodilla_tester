@@ -12,7 +12,7 @@ public class OperatingSystem {
         System.out.println("System is closing.");
     }
     public void displayYear() {
-        System.out.println("This system were released in " + year);
+        System.out.println("This system updated in " + year);
     }
     public int getYear() {
         return year;
