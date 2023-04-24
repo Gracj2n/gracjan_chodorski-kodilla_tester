@@ -13,3 +13,5 @@ public class Application {
         rectangle.circuit();
     }
 }
+
+// Czemu jest błąd??????
