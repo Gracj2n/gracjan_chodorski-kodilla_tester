@@ -3,8 +3,8 @@ package com.kodilla.abstracts.homework2;
 public class Person{
     private String firstName;
     private int age;
-    private String job;
-    public Person(String firstName, int age, String job) {
+    private Job job;
+    public Person(String firstName, int age, Job job) {
         this.firstName = firstName;
         this.age = age;
         this.job = job;
@@ -15,7 +15,10 @@ public class Person{
     public int getAge() {
         return age;
     }
-    public String getJob() {
+    public Job getJob() {
         return job;
+    }
+    public void showResponsibilities() {
+        System.out.println(job.getResponsibilities());
     }
 }
