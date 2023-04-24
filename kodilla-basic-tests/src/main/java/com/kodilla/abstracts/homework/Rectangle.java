@@ -10,14 +10,16 @@ public class Rectangle extends Shape{
     }
 
     @Override
-    public void surface() {
+    public int surface() {
         int sa = a * b;
         System.out.println("Rectangle surface: " + sa);
+        return sa;
     }
 
     @Override
-    public void circuit() {
+    public int circuit() {
         int ca = (2 * a) + (2 * b);
         System.out.println("Rectangle circuit: " + ca);
+        return ca;
     }
 }

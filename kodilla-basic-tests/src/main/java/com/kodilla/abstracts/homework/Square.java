@@ -9,14 +9,16 @@ public class Square extends Shape {
         this.b = b;
     }
     @Override
-    public void surface() {
+    public int surface() {
         int sa = a * a;
         System.out.println("Square surface: " + sa);
+        return sa;
     }
     @Override
-    public void circuit() {
+    public int circuit() {
         int ca = 4 * a;
         System.out.println("Square circuit: " + ca);
+        return ca;
     }
 
 }

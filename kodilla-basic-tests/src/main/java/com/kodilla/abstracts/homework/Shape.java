@@ -15,6 +15,6 @@ public abstract class Shape {
     public int getB() {return b;}
 
      */
-    public abstract void surface();
-    public abstract void circuit();
+    public abstract int surface();
+    public abstract int circuit();
 }
