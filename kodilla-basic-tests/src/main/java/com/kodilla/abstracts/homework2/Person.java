@@ -21,4 +21,9 @@ public class Person{
     public void showResponsibilities() {
         System.out.println(job.getResponsibilities());
     }
+    public void showInfo(Person person) {
+        System.out.println("Name: " + person.getFirstName());
+        System.out.println("Age: " + person.getAge());
+    }
+
 }
