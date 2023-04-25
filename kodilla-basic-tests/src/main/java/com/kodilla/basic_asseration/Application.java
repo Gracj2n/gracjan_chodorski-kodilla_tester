@@ -6,7 +6,7 @@ public class Application {
         int a = 5;
         int b = 8;
         int sumResult = testSum.sum(a, b);
-        boolean correct = ResultChecker.asserEquals(13, sumResult);
+        boolean correct = ResultChecker.assertEquals(13, sumResult, 0.1);
 
         if (correct) {
             System.out.println("Metoda sum działa poprawnie dla liczb " + a + " i " + b);
@@ -20,7 +20,7 @@ public class Application {
         int a1 = 5;
         int b1 = 7;
         int substractResult = testSubstract.substract(a1, b1);
-        boolean correct2 = ResultChecker.asserEquals(-2, substractResult);
+        boolean correct2 = ResultChecker.assertEquals(-2, substractResult, 0.1);
 
         if(correct2) {
             System.out.println("Metoda substract działa poprawnie dla liczb " + a1 + " i " + b1);
@@ -34,7 +34,7 @@ public class Application {
 
         int a2 = -4;
         int squaredResult = testSquared.squared(a2);
-        boolean correct3 = ResultChecker.asserEquals(16, squaredResult);
+        boolean correct3 = ResultChecker.assertEquals(16, squaredResult, 0.1);
 
         if (correct3) {
             System.out.println("Metoda squared działa poprawnie dla liczby " + a2);
