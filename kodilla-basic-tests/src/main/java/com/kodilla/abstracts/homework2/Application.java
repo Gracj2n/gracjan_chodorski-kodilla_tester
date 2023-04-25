@@ -10,9 +10,10 @@ public class Application {
 
 
         Person adam = new Person("Adam", 23, jobHelpDesk);
-        adam.showResponsibilities();
         //personInfo.showInfo(adam);
         //jobInfo.showJobInfo(jobHelpDesk);
+        adam.showResponsibilities();
+        adam.showInfo(adam);
 
         System.out.println("");
 
@@ -20,6 +21,8 @@ public class Application {
         Person dawid = new Person("Dawid", 33, jobFrontendDeveloper);
         //personInfo.showInfo(dawid);
         //jobInfo.showJobInfo(jobFrontendDeveloper);
+        dawid.showResponsibilities();
+        dawid.showInfo(dawid);
 
         System.out.println("");
 
