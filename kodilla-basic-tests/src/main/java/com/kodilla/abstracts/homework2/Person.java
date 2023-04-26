@@ -9,9 +9,11 @@ public class Person{
         this.age = age;
         this.job = job;
     }
+    /*
     public String getFirstName() {
         return firstName;
     }
+     */
     public int getAge() {
         return age;
     }
@@ -21,9 +23,9 @@ public class Person{
     public void showResponsibilities() {
         System.out.println(job.getResponsibilities());
     }
-    public void showInfo(Person person) {
-        System.out.println("Name: " + person.getFirstName());
-        System.out.println("Age: " + person.getAge());
+    public void showInfo() {
+        System.out.println("Name: " + firstName);
+        System.out.println("Age: " + getAge());
     }
 
 }
