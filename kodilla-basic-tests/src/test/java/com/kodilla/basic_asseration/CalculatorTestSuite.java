@@ -9,11 +9,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CalculatorTestSuite {
     @Test
     public void testSum() {
-        Calculator testSum = new Calculator();
+        Calculator calculator = new Calculator();
         int a = 5;
         int b = 8;
-        int sumResult = testSum.sum(a, b);
-        assertEquals(13, sumResult, 0.1);
+        int sumResult = calculator.sum(a, b);
+        assertEquals(13, sumResult);
     }
     @Test
     public void testSubstract() {
@@ -28,7 +28,7 @@ public class CalculatorTestSuite {
         Calculator testSquared = new Calculator();
         int a2 = 0;
         int sumSquared = testSquared.squared(a2);
-        assertEquals(25, sumSquared, 0.1);
+        assertEquals(0, sumSquared, 0.1);
 
     }
     @Test
@@ -45,4 +45,5 @@ public class CalculatorTestSuite {
         int sumSquared = testSquared.squared(a2);
         assertEquals(25, sumSquared, 0.1);
     }
+
 }
