@@ -9,12 +9,12 @@ public class Opel implements Car{
     }
     @Override
     public void increaseSpeed() {
-        int increase = 50 + getSpeed();
-        System.out.println("Prędkość zwiększona: " + increase);
+        speed = speed + 50;
+        System.out.println("Prędkość zwiększona: " + speed);
     }
     @Override
     public void decreaseSpeed() {
-        int decrease = -15 + getSpeed();
-        System.out.println("Prędkośc zmniejszona: "+ decrease);
+        speed = speed -15;
+        System.out.println("Prędkośc zmniejszona: "+ speed);
     }
 }

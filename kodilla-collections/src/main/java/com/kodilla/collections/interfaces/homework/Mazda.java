@@ -9,12 +9,12 @@ public class Mazda implements Car{
     }
     @Override
     public void increaseSpeed() {
-        int increase = 20 + getSpeed();
-        System.out.println("Prędkość zwiększona: " + increase);
+        speed = speed + 40;
+        System.out.println("Prędkość zwiększona: " + speed);
     }
     @Override
     public void decreaseSpeed() {
-        int decrease = -10 + getSpeed();
-        System.out.println("Prędkośc zmniejszona: "+ decrease);
+        speed = speed -10;
+        System.out.println("Prędkośc zmniejszona: "+ speed);
     }
 }

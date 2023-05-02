@@ -1,7 +1,7 @@
 package com.kodilla.collections.interfaces.homework;
 
 public class Ford implements Car{
-    private int speed;
+    private int speed = 160;
     @Override
     public int getSpeed() {
         this.speed = 160;
@@ -9,13 +9,13 @@ public class Ford implements Car{
     }
     @Override
     public void increaseSpeed() {
-        int increase = 30 + getSpeed();
-        System.out.println("Prędkość zwiększona: " + increase);
+        speed = speed + 30;
+        System.out.println("Prędkość zwiększona: " + speed);
     }
     @Override
     public void decreaseSpeed() {
-        int decrease = -20 + getSpeed();
-        System.out.println("Prędkośc zmniejszona: "+ decrease);
+        speed = speed -20;
+        System.out.println("Prędkośc zmniejszona: "+ speed);
     }
 }
 
