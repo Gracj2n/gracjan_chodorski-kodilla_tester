@@ -2,27 +2,20 @@ package com.kodilla.collections.interfaces.homework;
 
 public class Ford implements Car{
     private int speed;
-    private int increase;
-    private int decrease;
-
     @Override
     public int getSpeed() {
         this.speed = 160;
         return speed;
     }
-
     @Override
     public void increaseSpeed() {
-        this.increase = 30;
-        int sum = increase + getSpeed();
-        System.out.println(sum);
+        int increase = 30 + getSpeed();
+        System.out.println("Prędkość zwiększona: " + increase);
     }
-
     @Override
     public void decreaseSpeed() {
-        this.decrease = -20;
-        int sum = decrease + getSpeed();
-        System.out.println(sum);
+        int decrease = -20 + getSpeed();
+        System.out.println("Prędkośc zmniejszona: "+ decrease);
     }
 }
 

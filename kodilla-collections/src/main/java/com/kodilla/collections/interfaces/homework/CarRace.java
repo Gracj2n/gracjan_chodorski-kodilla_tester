@@ -6,14 +6,15 @@ public class CarRace {
         Mazda mazda = new Mazda();
         Opel opel = new Opel();
 
-        ford.getSpeed();
-        mazda.getSpeed();
-        opel.getSpeed();
-
         doRace(ford);
-
+        System.out.println();
+        doRace(mazda);
+        System.out.println();
+        doRace(opel);
     }
     private static void doRace(Car car) {
-
+        car.increaseSpeed();
+        car.decreaseSpeed();
+        System.out.println(car.getSpeed());
     }
 }
