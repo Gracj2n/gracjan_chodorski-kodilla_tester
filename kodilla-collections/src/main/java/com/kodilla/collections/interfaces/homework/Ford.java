@@ -1,7 +1,7 @@
 package com.kodilla.collections.interfaces.homework;
 
 public class Ford implements Car{
-    private int speed = 160;
+    private int speed;
     @Override
     public int getSpeed() {
         this.speed = 160;
