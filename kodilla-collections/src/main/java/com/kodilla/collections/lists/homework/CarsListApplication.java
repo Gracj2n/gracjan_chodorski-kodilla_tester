@@ -9,21 +9,23 @@ import java.util.List;
 
 public class CarsListApplication {
     public static void main(String[] args) {
-        List<Ford> cars = new ArrayList<>();
+        List<Car> cars = new ArrayList<>();
 
         Ford ford1 = new Ford();
+        Ford ford2 = new Ford();
+        Ford ford3 = new Ford();
 
         cars.add(ford1);
-        cars.add(new Ford());
-        cars.add(new Ford());
+        cars.add(ford2);
+        cars.add(ford3);
 
-        cars.remove(ford1);
-        cars.remove(0);
+        cars.remove(ford3);
+        cars.remove(1);
 
         System.out.println("Rozmiar kolekcji: " + cars.size());
 
-        for(Ford car : cars) {
-            System.out.println("Prędkość: " + car.getSpeed(150));
+        for(Car car : cars) {
+            CarUtils.describeCar(car);
         }
     }
 }

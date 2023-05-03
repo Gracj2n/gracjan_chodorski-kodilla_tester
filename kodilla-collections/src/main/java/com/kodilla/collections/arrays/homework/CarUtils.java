@@ -21,7 +21,7 @@ public class CarUtils {
         else if (car instanceof Opel)
             return "Opel";
         else if (car instanceof Ford)
-            return "Honda";
+            return "Ford";
         else
             return "Unknown car model";
     }
