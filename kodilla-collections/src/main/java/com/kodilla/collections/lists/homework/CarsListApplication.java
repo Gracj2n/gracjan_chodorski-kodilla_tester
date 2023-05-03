@@ -23,7 +23,7 @@ public class CarsListApplication {
         System.out.println("Rozmiar kolekcji: " + cars.size());
 
         for(Ford car : cars) {
-            System.out.println("Prędkość: " + car.getSpeed());
+            System.out.println("Prędkość: " + car.getSpeed(150));
         }
     }
 }
