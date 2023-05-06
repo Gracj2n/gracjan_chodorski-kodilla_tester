@@ -3,8 +3,7 @@ package com.kodilla.collections.interfaces.homework;
 public class Mazda implements Car{
     private int speed;
     @Override
-    public int getSpeed(int speed) {
-        this.speed = speed;
+    public int getSpeed() {
         return speed;
     }
     @Override

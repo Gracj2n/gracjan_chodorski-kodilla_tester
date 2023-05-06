@@ -1,7 +1,7 @@
 package com.kodilla.collections.interfaces.homework;
 
 public interface Car {
-    int getSpeed(int speed);
+    int getSpeed();
 
     void increaseSpeed();
     void decreaseSpeed();
