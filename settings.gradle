@@ -5,4 +5,5 @@ include 'kodilla-basic-tests'
 include 'kodilla-basic-tests:kodilla-collections'
 findProject(':kodilla-basic-tests:kodilla-collections')?.name = 'kodilla-collections'
 include 'kodilla-collections'
+include 'kodilla-collections-advanced'
 
