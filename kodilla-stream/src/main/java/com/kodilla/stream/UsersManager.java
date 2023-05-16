@@ -10,8 +10,8 @@ public class UsersManager {
 
         System.out.println();
 
-        List<Integer> usersOver35yo = filterUsersOver35();
-        System.out.println("Users over 35 years old: " + usersOver35yo);
+        //List<Integer> usersOver35yo = filterUsersOver35(35);
+        //System.out.println("Users over 35 years old: " + usersOver35yo);
 
 
     }
@@ -25,14 +25,13 @@ public class UsersManager {
         return usernames;
     }
 
-    public static List<Integer> filterUsersOver35() {
-        List<Integer> age = UsersRepository.getUsersList()
+    /*public static List<Integer> filterUsersOver35(int age) {
+        List<User> age1 = UsersRepository.getUsersList()
                 .stream()
-                .filter(user -> user.getAge() > 35)
-                .map(UsersManager::getUserAge)
+                .filter(user -> user.getAge() > age)
                 .collect(Collectors.toList());
-                return age;
-    }
+                return age1;
+    }*/
     public static String getUserName(User user) {
         return user.getUsername();
     }
