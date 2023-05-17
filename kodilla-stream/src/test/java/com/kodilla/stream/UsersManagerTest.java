@@ -3,8 +3,6 @@ package com.kodilla.stream;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -29,15 +27,13 @@ class UsersManagerTest {
         //given
         UsersManager ageMethod = new UsersManager();
         //when
-        //List<Integer> userNamesOver35 = ageMethod.filterUsersOver35(35);
+        List<User> userNamesOver35 = ageMethod.filterUsersOver35(35);
         //then
         List<Integer> expectedUsersAge = new ArrayList<>();
         expectedUsersAge.add(50);
         expectedUsersAge.add(49);
         expectedUsersAge.add(44);
         expectedUsersAge.add(57);
-       // assertEquals(expectedUsersAge, userNamesOver35);
-
-
+        assertEquals(expectedUsersAge, userNamesOver35);
     }
 }

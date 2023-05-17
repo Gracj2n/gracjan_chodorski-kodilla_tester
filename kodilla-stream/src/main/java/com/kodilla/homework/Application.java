@@ -1,7 +1,9 @@
 package com.kodilla.homework;
 
 import com.kodilla.stream.User;
+import org.w3c.dom.ls.LSOutput;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class Application {
@@ -15,11 +17,14 @@ public class Application {
         students.add(new Student("Maja Lotnisko", new Teacher(null)));
 
         for(Student student : students) {
-            Optional<Student> a = Optional.ofNullable(student);
-            a.ifPresent(u -> System.out.println("uczeń: " + u.getName() + " nauczyciel; " + u.getTeacher()));
+            Optional<String> a = Optional.ofNullable(student.getTeacher().getName());
+            a.orElse("123 123 123");
+
+            System.out.println("Uczeń: " + student.getName() + " Nauczyciel: " + student.getTeacher().getName());
 
             if (student.getTeacher().getName() == null) {
-                    System.out.println("<undefined>");
+
+                System.out.println("<undefined>");
             }
         }
     }
