@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,6 +35,14 @@ class UsersManagerTest {
         expectedUsersAge.add(49);
         expectedUsersAge.add(44);
         expectedUsersAge.add(57);
-        assertEquals(expectedUsersAge, userNamesOver35);
+        //assertEquals(expectedUsersAge, userNamesOver35);
+
+        List<Integer> result = userNamesOver35
+                .stream()
+                .map(u -> u.getAge())
+                .collect(Collectors.toList());
+        assertEquals(result, expectedUsersAge);
+
+
     }
 }

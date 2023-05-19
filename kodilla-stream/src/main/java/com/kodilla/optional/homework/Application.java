@@ -1,9 +1,5 @@
-package com.kodilla.homework;
+package com.kodilla.optional.homework;
 
-import com.kodilla.stream.User;
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class Application {
@@ -18,14 +14,10 @@ public class Application {
 
         for(Student student : students) {
             Optional<String> a = Optional.ofNullable(student.getTeacher().getName());
-            a.orElse("123 123 123");
+            String string = a.orElse("<undefined>");
 
-            System.out.println("Uczeń: " + student.getName() + " Nauczyciel: " + student.getTeacher().getName());
-
-            if (student.getTeacher().getName() == null) {
-
-                System.out.println("<undefined>");
+            System.out.println("Uczeń: " + student.getName() + " Nauczyciel: " + string);
             }
         }
     }
-}
+
