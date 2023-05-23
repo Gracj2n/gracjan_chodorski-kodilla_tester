@@ -1,14 +1,14 @@
 package com.kodilla.exception.homework;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class WarehouseApp {
     public static void main(String[] args) {
         Warehouse warehouse = new Warehouse();
 
-        List<Order> orders = new ArrayList<>();
+        warehouse.addOrder(new Order("1"));
+        warehouse.addOrder(new Order("2"));
+        warehouse.addOrder(new Order("3"));
+        warehouse.addOrder(new Order("4"));
 
-        orders.add(new Order("1"));
+        warehouse.getOrder("1");
     }
 }
