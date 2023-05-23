@@ -19,9 +19,7 @@ public class User {
         return username;
     }
 
-    public int getAge() {
-        return age;
-    }
+    public int getAge() { return age; }
 
     public int getNumberOfPost() {
         return numberOfPost;
