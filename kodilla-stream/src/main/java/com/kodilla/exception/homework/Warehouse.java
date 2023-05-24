@@ -1,21 +1,19 @@
 package com.kodilla.exception.homework;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Warehouse {
-    //private List<Order> orders;
-    public Order addOrder(Order order) {
-//        List<Order> orders = new ArrayList<>();
-//        orders.get(1);
-        System.out.println("Dodano zamówienie: " + order.getNumber());
-        return order;
+    List<Order> orders = new ArrayList<>();
+    public void addOrder(Order order) {
+        this.orders.add(order);
     }
-    public Order getOrder(String number) {
-
-
-
-        return null;
+    public List<Order> getOrder(String number) {
+        List<Order> filteredOrdersByNumber = orders
+                .stream()
+                .filter(n -> n.equals(orders.get(Integer.parseInt(number))))
+                .collect(Collectors.toList());
+        return filteredOrdersByNumber;
     }
 }
