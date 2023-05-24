@@ -9,11 +9,14 @@ public class Warehouse {
     public void addOrder(Order order) {
         this.orders.add(order);
     }
-    public List<Order> getOrder(String number) {
+    public List<Order> getOrder(String number) throws OrderDoesntExistException {
         List<Order> filteredOrdersByNumber = orders
                 .stream()
-                .filter(n -> n.equals(orders.get(Integer.parseInt(number))))
+                .filter(order -> order.getNumber().equals(number))
                 .collect(Collectors.toList());
+        if(filteredOrdersByNumber.size() == 0) {
+            throw new OrderDoesntExistException();
+        }
         return filteredOrdersByNumber;
     }
 }
