@@ -8,4 +8,5 @@ include 'kodilla-collections'
 include 'kodilla-collections-advanced'
 include 'kodilla-stream'
 include 'Kodilla-advanced-tests'
+include 'Kodilla-powtorka'
 
