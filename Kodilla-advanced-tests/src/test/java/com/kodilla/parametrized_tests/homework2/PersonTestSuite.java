@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class PersonTestSuite {
     @ParameterizedTest
     @MethodSource(value = "com.kodilla.parametrized_tests.homework2.PersonSources#provideStringsForTestingLength")
-    public void shouldReturnBMI(String input, String expected) {
-        assertEquals(expected, input);
+    public void shouldReturnBMI(Person input, String expected) {
+        assertEquals(expected, input.getBMI());
     }
 }
