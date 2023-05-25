@@ -17,25 +17,41 @@ class GamblingMachineTestSuite {
     GamblingMachine gamblingMachine = new GamblingMachine();
 
    private static Stream<Arguments> provideSetsForTesting() {
-       Set<Integer> zaMaloLiczb = new HashSet<>();
-       zaMaloLiczb.add(-1);
-       zaMaloLiczb.add(2);
-       zaMaloLiczb.add(50);
+       Set<Integer> toLittleNumbers = new HashSet<>();
+       toLittleNumbers.add(-1);
+       toLittleNumbers.add(2);
+       toLittleNumbers.add(50);
 
-       Set<Integer> zaDuzoLiczb = new HashSet<>();
-       zaDuzoLiczb.add(-1);
-       zaDuzoLiczb.add(2);
-       zaDuzoLiczb.add(50);
-       zaDuzoLiczb.add(16);
-       zaDuzoLiczb.add(30);
-       zaDuzoLiczb.add(20);
-       zaDuzoLiczb.add(12);
+       Set<Integer> toManyNumbers = new HashSet<>();
+       toManyNumbers.add(-1);
+       toManyNumbers.add(2);
+       toManyNumbers.add(50);
+       toManyNumbers.add(16);
+       toManyNumbers.add(30);
+       toManyNumbers.add(20);
+       toManyNumbers.add(12);
+
+       Set<Integer> oneWrongNumber = new HashSet<>();
+       oneWrongNumber.add(-1);
+       oneWrongNumber.add(5);
+       oneWrongNumber.add(34);
+       oneWrongNumber.add(46);
+       oneWrongNumber.add(44);
+       oneWrongNumber.add(10);
+
+       Set<Integer> zeroInNumbersSet = new HashSet<>();
+       zeroInNumbersSet.add(0);
+       zeroInNumbersSet.add(5);
+       zeroInNumbersSet.add(34);
+       zeroInNumbersSet.add(46);
+       zeroInNumbersSet.add(44);
+       zeroInNumbersSet.add(10);
 
        return Stream.of(
-               Arguments.of(zaMaloLiczb),   //za mało liczb
-               Arguments.of(zaDuzoLiczb)   //za dużo liczb
-
-
+               Arguments.of(toLittleNumbers),   //za mało liczb
+               Arguments.of(toManyNumbers),     //za dużo liczb
+               Arguments.of(oneWrongNumber),    //jedna zła liczba
+               Arguments.of(zeroInNumbersSet)   //liczba 0 w zbiorze
        );
    }
 
