@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PersonTestSuite {
     @ParameterizedTest
-    @MethodSource(value = "com.kodilla.parametrized_tests.homework2.PersonSources#provideStringsForTestingLength")
+    @MethodSource(value = "com.kodilla.parametrized_tests.homework2.PersonSources#provideObjectsPersonForTestingGetBmi")
     public void shouldReturnBMI(Person input, String expected) {
         assertEquals(expected, input.getBMI());
     }
