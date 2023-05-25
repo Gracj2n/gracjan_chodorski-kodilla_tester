@@ -30,9 +30,11 @@ class GamblingMachineTestSuite {
        zaDuzoLiczb.add(30);
        zaDuzoLiczb.add(20);
        zaDuzoLiczb.add(12);
+
        return Stream.of(
                Arguments.of(zaMaloLiczb),   //za mało liczb
                Arguments.of(zaDuzoLiczb)   //za dużo liczb
+
 
        );
    }
