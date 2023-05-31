@@ -9,7 +9,7 @@ public class Invoice {
 
     public void addItem(Item item) {
         this.items.add(item);
-    }
+    } //s
 
     public Item getItem(int index) {
         if (index >= 0 && index < items.size()) {
