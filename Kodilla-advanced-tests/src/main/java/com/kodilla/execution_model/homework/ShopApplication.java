@@ -25,6 +25,7 @@ public class ShopApplication {
         shop.addOrder(order8);
 
         System.out.println();
+
         System.out.println("Number of all orders: " + shop.getNumberOfOrders());
 
         System.out.println("Sum of all orders: " + shop.sumValueOfOrders());
