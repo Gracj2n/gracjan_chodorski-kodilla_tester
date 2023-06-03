@@ -13,6 +13,7 @@ public class Shop {
         this.orders.add(order);
     }
 
+
     public List<Order> getOrderListPastYear(int date) {
         return orders
                 .stream()
