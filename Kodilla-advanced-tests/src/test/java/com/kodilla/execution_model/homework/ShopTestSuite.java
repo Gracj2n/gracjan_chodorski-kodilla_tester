@@ -2,19 +2,19 @@ package com.kodilla.execution_model.homework;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ShopTestSuite {
-    private List<Order> orders = new ArrayList<>();
-
-    Order order1 = new Order(1200, 2021, "kkowal123");
-
 
     @Test
     public void shouldAddOrder() {
+        Shop shop = new Shop();
+       // Order order = new Order(1150, , "exampleLogin");
+        // shop.addOrder(order);
 
     }
 }

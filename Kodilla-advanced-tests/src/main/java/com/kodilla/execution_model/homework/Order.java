@@ -1,11 +1,13 @@
 package com.kodilla.execution_model.homework;
 
+import java.time.Instant;
+
 public class Order {
     private double value;
-    private int date;
+    private Instant date;
     private String login;
 
-    public Order(double value, int date, String login) {
+    public Order(double value, Instant date, String login) {
         this.value = value;
         this.date = date;
         this.login = login;
@@ -15,7 +17,7 @@ public class Order {
         return value;
     }
 
-    public int getDate() {
+    public Instant getDate() {
         return date;
     }
 
