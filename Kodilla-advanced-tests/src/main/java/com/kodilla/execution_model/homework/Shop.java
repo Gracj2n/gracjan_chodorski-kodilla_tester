@@ -15,7 +15,7 @@ public class Shop {
     }
 
 
-    public List<Order> getOrderListPastYear(Instant minDate, Instant maxDate) {
+    public List<Order> getOrderListFromToDate(Instant minDate, Instant maxDate) {
         return orders
                 .stream()
                 .filter(order -> order.getDate().isAfter(minDate))
@@ -39,7 +39,8 @@ public class Shop {
 //            sum = sum + order.getValue();
 //        }
 //        return sum;
-        return orders.stream()
+        return orders
+                .stream()
                 .mapToDouble(n -> n.getValue())
                 .sum();
     }
