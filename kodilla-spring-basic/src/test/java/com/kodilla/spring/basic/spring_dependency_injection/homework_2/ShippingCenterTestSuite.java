@@ -11,7 +11,14 @@ class ShippingCenterTestSuite {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
         ShippingCenter bean = context.getBean(ShippingCenter.class);
         String method = bean.sendPackage("example address", 25);
-        Assertions.assertEquals("example address", method);
-
+        Assertions.assertEquals("Package delivered to: example address", method);
     }
+    @Test
+    public void shouldNotSendPackage() {
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
+        ShippingCenter bean = context.getBean(ShippingCenter.class);
+        String method = bean.sendPackage("example address", 37);
+        Assertions.assertEquals("Package not delivered to: example address", method);
+    }
+
 }

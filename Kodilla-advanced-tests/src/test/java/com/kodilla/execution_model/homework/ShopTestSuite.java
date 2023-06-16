@@ -28,18 +28,22 @@ class ShopTestSuite {
     public void shouldReturnOrderFromToDate() {
         Shop shop = new Shop();
 
-        Order order1 = new Order(1150, Instant.parse("2020"), "exampleLogin");
-        Order order2 = new Order(1150, Instant.parse("2022"), "exampleLogin");
-        Order order3 = new Order(1150, Instant.parse("2023"), "exampleLogin");
-        Order order4 = new Order(1150, Instant.parse("2024"), "exampleLogin");
+        Order order1 = new Order(1150, Instant.parse("2020-06-16T18:06:00.00Z"), "exampleLogin");
+        Order order2 = new Order(1150, Instant.parse("2023-06-16T18:06:00.00Z"), "exampleLogin");
+        Order order3 = new Order(1150, Instant.parse("2022-06-16T18:06:00.00Z"), "exampleLogin");
+        Order order4 = new Order(1150, Instant.parse("2023-06-16T18:06:00.00Z"), "exampleLogin");
 
         shop.addOrder(order1);
         shop.addOrder(order2);
         shop.addOrder(order3);
         shop.addOrder(order4);
 
-        //shop.getOrderListFromToDate(Instant.parse("2020"), Instant.parse("2023"));
-        //jaka aseracja?
+        List<Order> orderList = List.of(order2, order3, order4);
+
+        List<Order> expectedList = shop.getOrderListFromToDate(Instant.parse("2022-01-01T00:00:00.00Z"), Instant.parse("2024-01-01T00:00:00.00Z"));
+
+        Assertions.assertEquals(expectedList.size(), 3);
+        Assertions.assertEquals(expectedList, orderList);
     }
 
     @Test
@@ -56,9 +60,9 @@ class ShopTestSuite {
         shop.addOrder(order3);
         shop.addOrder(order4);
 
-        List<Order> orders = shop.getOrderByValue(350, 3000);
-        //System.out.println(orders);
-        //jaka aseracja?
+        List<Order> expectedList = shop.getOrderByValue(350, 3000);
+
+        Assertions.assertEquals(expectedList.size(), 2);
 
     }
     @Test

@@ -7,27 +7,28 @@ import java.util.Set;
 
 public class AlertService {
 
-
     private Map<Civilian, Set<Alert>> civilianAlertMap = new HashMap<>();
 
     public void acceptAlert(Alert alert, Civilian civilian) {
-        Set<Alert> sub = this.civilianAlertMap.get(civilian);
-        sub.add(alert);
+        Set<Alert> acceptSubscription = this.civilianAlertMap.getOrDefault(civilian, new HashSet<>());
 
-        civilianAlertMap.put(civilian, sub);
+        acceptSubscription.add(alert);
+
+        civilianAlertMap.put(civilian, acceptSubscription);
     }
 
     public void removeAlert(Alert alert, Civilian civilian) {
-        Set<Alert> removeSub = this.civilianAlertMap.get(civilian);
-        removeSub.remove(alert);
+        Set<Alert> removeSubscription = this.civilianAlertMap.getOrDefault(civilian, new HashSet<>());
 
-        civilianAlertMap.put(civilian, removeSub);
+        removeSubscription.remove(alert);
+
+        civilianAlertMap.put(civilian, removeSubscription);
     }
     public void removeAllAlert(Civilian civilian) {
         civilianAlertMap.remove(civilian);
     }
 
-    public void sendAlert(Alert alert) {
+    public void sendAlertToAccepted(Alert alert) {
         this.civilianAlertMap.entrySet().stream()
                 .filter(e -> e.getValue().contains(alert))
                 .forEach(e -> e.getKey().receive(alert));
