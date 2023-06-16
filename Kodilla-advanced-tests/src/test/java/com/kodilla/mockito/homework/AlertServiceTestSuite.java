@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 class AlertServiceTestSuite {
-    private AlertService alertService = new AlertService();
-    private Civilian civilian1 = Mockito.mock(Civilian.class);
-    private Civilian civilian2 = Mockito.mock(Civilian.class);
-    private Civilian civilian3 = Mockito.mock(Civilian.class);
-    private Alert alert1 = Mockito.mock(Alert.class);
-    private Alert alert2 = Mockito.mock(Alert.class);
-    private Alert alert3 = Mockito.mock(Alert.class);
+    AlertService alertService = new AlertService();
+    Civilian civilian1 = Mockito.mock(Civilian.class);
+    Civilian civilian2 = Mockito.mock(Civilian.class);
+    Civilian civilian3 = Mockito.mock(Civilian.class);
+    Alert alert1 = Mockito.mock(Alert.class);
+    Alert alert2 = Mockito.mock(Alert.class);
+    Alert alert3 = Mockito.mock(Alert.class);
 
     @Test
     public void shouldSendAlertToCivilianIfAcceptAlert() {
