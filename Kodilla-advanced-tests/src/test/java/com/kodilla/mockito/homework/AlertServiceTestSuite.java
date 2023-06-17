@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 class AlertServiceTestSuite {
+
     AlertService alertService = new AlertService();
     Civilian civilian1 = Mockito.mock(Civilian.class);
     Civilian civilian2 = Mockito.mock(Civilian.class);
