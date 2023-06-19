@@ -19,7 +19,7 @@ public class CarConfiguration {
     @Bean
     public Cabriolet setCabriolet() { return new Cabriolet(); }
 
-    @Bean
+    //@Bean
     public Car whatToChoose(String weather) {
         Car car = null;
         if (weather == "Summer") {
