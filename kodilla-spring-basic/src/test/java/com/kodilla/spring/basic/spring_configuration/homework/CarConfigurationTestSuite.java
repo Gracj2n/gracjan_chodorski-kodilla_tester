@@ -21,7 +21,15 @@ class CarConfigurationTestSuite {
         assertEquals("Sedan", expected);
     }
     @Test
-    public void carSuvConfiguration() {
+    public void whatToChooseForSummer() {
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
+        //CarConfiguration carConfiguration = (CarConfiguration) context.getBean("whatToChoose");
+        CarConfiguration carConfiguration = context.getBean(CarConfiguration.class);
+
+        System.out.println(carConfiguration.whatToChoose("Summer"));
+
+
+
 
     }
 

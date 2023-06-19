@@ -1,7 +1,12 @@
 package com.kodilla.spring.basic.spring_configuration.homework;
 
+import com.kodilla.spring.basic.spring_configuration.Cat;
+import com.kodilla.spring.basic.spring_configuration.Dog;
+import com.kodilla.spring.basic.spring_configuration.Duck;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.Random;
 
 @Configuration
 public class CarConfiguration {
@@ -16,17 +21,14 @@ public class CarConfiguration {
 
     @Bean
     public Car whatToChoose(String weather) {
-        Car car;
+        Car car = null;
         if (weather == "Summer") {
-            //car = new Cabriolet();
-            return setCabriolet();
-        } else if (weather == "Winter"){
-            //car = new Suv();
-            return setSuv();
+            car = new Cabriolet();
+        } else if (weather == "Spring") {
+            car = new Suv();
         } else {
-            //car = new Sedan();
-            return setSedan();
+            car = new Sedan();
         }
-        //return car;
+        return car;
     }
 }
