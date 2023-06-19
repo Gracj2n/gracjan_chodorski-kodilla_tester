@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTestSuite {
+class Calculator1TestSuite {
 
     private ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
     private Calculator bean = context.getBean(Calculator.class);
