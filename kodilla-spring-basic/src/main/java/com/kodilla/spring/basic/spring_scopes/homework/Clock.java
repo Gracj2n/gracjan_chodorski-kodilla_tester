@@ -8,7 +8,8 @@ import java.time.Instant;
 @Component
 @Scope("prototype")
 public class Clock {
+    Instant time;
     public Clock() {
-        System.out.println("Actual time: " + Instant.now());
+        System.out.println(this.time = Instant.now());
     }
 }
