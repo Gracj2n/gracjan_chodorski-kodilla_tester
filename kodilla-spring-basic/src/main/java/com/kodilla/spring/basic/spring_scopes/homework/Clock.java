@@ -12,4 +12,8 @@ public class Clock {
     public Clock() {
         System.out.println(this.time = Instant.now());
     }
+
+    public Instant getTime() {
+        return time;
+    }
 }

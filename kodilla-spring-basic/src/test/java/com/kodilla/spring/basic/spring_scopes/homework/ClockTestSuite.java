@@ -6,6 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.time.Instant;
+
 @SpringBootTest
 public class ClockTestSuite {
 
@@ -15,6 +17,8 @@ public class ClockTestSuite {
         Clock timeOne = context.getBean(Clock.class);
         Clock timeTwo = context.getBean(Clock.class);
 
-        Assertions.assertNotEquals(timeOne, timeTwo);
+        Assertions.assertNotEquals(Instant.now(), timeOne.getTime());
+        Assertions.assertNotEquals(timeOne.getTime(), timeTwo.getTime());
+
     }
 }
