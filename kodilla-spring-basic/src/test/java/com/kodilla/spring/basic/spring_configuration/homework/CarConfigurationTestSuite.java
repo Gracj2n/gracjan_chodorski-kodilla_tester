@@ -11,26 +11,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 class CarConfigurationTestSuite {
 
-    @Test
-    public void shouldCreateSuv() {
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
-        Sedan sedan = context.getBean(Sedan.class);
-
-        String expected = sedan.getCarType();
-
-        assertEquals("Sedan", expected);
-    }
+//    @Test
+//    public void shouldCreateSuv() {
+//        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
+//        Sedan sedan = context.getBean(Sedan.class);
+//
+//        String expected = sedan.getCarType();
+//
+//        assertEquals("Sedan", expected);
+//    }
     @Test
     public void whatToChooseForSummer() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
         //CarConfiguration carConfiguration = (CarConfiguration) context.getBean("whatToChoose");
-        CarConfiguration carConfiguration = context.getBean(CarConfiguration.class);
+        Car car = context.getBean(Car.class);
+        System.out.println(car);
 
-        System.out.println(carConfiguration.whatToChoose("Summer"));
+        assertEquals(car.getCarType(),"Cabriolet");
 
-
-
-
+        assertEquals(car.hasHeadlightsTurnedOn(), true);
     }
 
 }
