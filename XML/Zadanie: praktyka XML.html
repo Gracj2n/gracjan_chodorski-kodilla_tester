@@ -1,0 +1,32 @@
+<?xml version=1.0 encoding="UTF-8"/?>
+<car:suv xmlns:car="http://www.kodilla.com"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kodilla.com car.xsd">
+  <car:doors>4</car:doors>
+  <car:seats>5</car:seats>
+  <car:scolor>blue</car:scolor>
+  <car:power>300</car:power>
+  <car:electric>true</car:electric>
+</car:suv>
+
+
+
+<!--car.xsd-->
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.kodilla.com"
+           xmlns="http://www.kodilla.com"
+           elementFormDeafult="Qualified">
+
+  <xs:element name="car">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="doors" type="xs:integer" default="4"/>
+        <xs:element name="seats" type="xs:integer" />
+        <xs:element name="color" type="xs:string" />
+        <xs:element name="power" type="xs:integer" />
+        <xs:element name="electric" type="xs:boolean" deafult="false" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
