@@ -11,4 +11,5 @@ include 'Kodilla-advanced-tests'
 include 'Kodilla-powtorka'
 include 'kodilla-spring-basic'
 include 'kodilla-rest-api'
+include 'soapui-project'
 
