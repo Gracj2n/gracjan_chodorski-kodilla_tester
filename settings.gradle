@@ -12,4 +12,5 @@ include 'Kodilla-powtorka'
 include 'kodilla-spring-basic'
 include 'kodilla-rest-api'
 include 'soapui-project'
+include 'kodilla-selenium'
 
