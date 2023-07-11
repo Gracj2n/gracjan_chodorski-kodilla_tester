@@ -19,6 +19,5 @@ public class FormTestingApp {
         WebElement yearList = webDriver.findElement(By.xpath("//*[@id=\"birthday_wrapper\"]/select[3]"));
         Select selectYear = new Select(yearList);
         selectYear.selectByIndex(5);
-
     }
 }
