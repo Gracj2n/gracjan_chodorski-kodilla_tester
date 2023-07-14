@@ -13,8 +13,11 @@ public class KodillaLoginPom {
     @FindBy(css = "input[type='email']")
     WebElement emailField;
 
-    @FindBy(css = "input[type='passowrd']")
+    @FindBy(css = "input[type='password']")
     WebElement passwordField;
+
+    @FindBy(css = "button[type='submit']")
+    WebElement loginButton;
 
     WebDriver webDriver;
 
@@ -24,7 +27,7 @@ public class KodillaLoginPom {
         chromeOptions.addArguments("--remote-allow-origins=*");
         webDriver = new ChromeDriver(chromeOptions);
 
-        PageFactory.initElements(webDriver, KodillaLoginPom.class);
+        PageFactory.initElements(webDriver, this);
 
         webDriver.get("https://kodilla.com/pl/test/login");
 
@@ -32,9 +35,13 @@ public class KodillaLoginPom {
         //WebElement passwordField = webDriver.findElement(By.xpath("//div[@class=\"form-group\"]/input[@id=\"password\"]"));
     }
 
-    public void login(String email, String password) {
+    public boolean login(String email, String password) {
         emailField.sendKeys(email);
         passwordField.sendKeys(password);
+        loginButton.click();
+
+        String message = webDriver.switchTo().alert().getText();
+        return message.equals("Jesteś teraz zalogowany!");
     }
 
     public void close() {
