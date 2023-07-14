@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class KodillaLoginPomTestSuite {
 
     KodillaLoginPom loginPom;
+
     WebDriver driver;
 
     @BeforeEach
@@ -42,6 +43,6 @@ public class KodillaLoginPomTestSuite {
 
     @AfterEach
     public void testDown() {
-        loginPom.close();
+        driver.close();
     }
 }
