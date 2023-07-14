@@ -33,8 +33,8 @@ public class AllegroTestingAppCss {
         searchField.sendKeys("Mavic mini");
         //searchField.submit();
 
-        WebDriverWait wait = new WebDriverWait(webDriver, 5);
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div/form[@data-role=\"search-form")));
+        //WebDriverWait wait = new WebDriverWait(webDriver, 5);
+        //wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div/form[@data-role=\"search-form")));
 
 
 
