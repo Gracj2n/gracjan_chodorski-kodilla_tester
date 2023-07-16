@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class KodillaLoginPom {
 
@@ -19,28 +20,27 @@ public class KodillaLoginPom {
     @FindBy(css = "button[type='submit']")
     WebElement loginButton;
 
+    @FindBy(xpath = "//span[@class=\"close-icon\"]")
+    WebElement closeAlert;
+
     WebDriver webDriver;
 
-    public KodillaLoginPom() {
-        System.setProperty("webdriver.chrome.driver", "/Users/gracjanchodorski/Desktop/gracjan_chodorski-kodilla_tester/chromedriver_mac64/chromedriver");
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--remote-allow-origins=*");
-        webDriver = new ChromeDriver(chromeOptions);
-
+    public KodillaLoginPom(WebDriver webDriver) {
+        this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
-
-        webDriver.get("https://kodilla.com/pl/test/login");
-
-        //WebElement emailField = webDriver.findElement(By.xpath("//div[@class=\"form-group\"]/input[@id=\"email\"]"));
-        //WebElement passwordField = webDriver.findElement(By.xpath("//div[@class=\"form-group\"]/input[@id=\"password\"]"));
     }
 
+    public void closeAlert() {
+        closeAlert.click();
+    }
     public boolean login(String email, String password) {
         emailField.sendKeys(email);
         passwordField.sendKeys(password);
         loginButton.click();
 
         String message = webDriver.switchTo().alert().getText();
+        webDriver.switchTo().alert().dismiss();
+
         return message.equals("Jesteś teraz zalogowany!");
     }
 
