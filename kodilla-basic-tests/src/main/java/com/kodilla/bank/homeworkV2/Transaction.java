@@ -1,13 +1,13 @@
 package com.kodilla.bank.homeworkV2;
 
 public class Transaction {
-    private int value;
+    private double value;
 
-    public Transaction(int value) {
-        this.value = value;
+    public Transaction(double value) {
+            this.value = value;
     }
 
-    public int getValue() {
+    public double getValue() {
         return value;
     }
 }

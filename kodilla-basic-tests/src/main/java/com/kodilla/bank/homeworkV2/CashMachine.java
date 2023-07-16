@@ -7,18 +7,18 @@ public class CashMachine {
     private List<Transaction> transactionList = new ArrayList<>();
 
     public List<Transaction> addTransaction(Transaction transaction) {
-       transactionList.add(transaction);
-       return transactionList;
+        transactionList.add(transaction);
+        return transactionList;
     }
 
-    public int showSaldo() {
+    public double showSaldo() {
         return transactionList
                 .stream()
-                .mapToInt(n -> n.getValue())
+                .mapToDouble(n -> n.getValue())
                 .sum();
     }
 
-    public List<Transaction> getTransactionList() {
-        return transactionList;
+    public int getTransactionList() {
+        return transactionList.size();
     }
 }

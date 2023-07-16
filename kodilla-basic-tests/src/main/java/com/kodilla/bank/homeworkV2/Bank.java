@@ -4,15 +4,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bank {
-    private List<CashMachine> cashMachines = new ArrayList<>();
-    private int size;
-    public void add(CashMachine cashMachine) {
-        this.cashMachines.add(cashMachine);
+    public List<CashMachine> cashMachinesList = new ArrayList<>();
+
+    public List<CashMachine> addCashMachineToBank(CashMachine cashMachine) {
+        cashMachinesList.add(cashMachine);
+        return cashMachinesList;
     }
 
-    public int withdraws() {
-        return cashMachines.size();// -.size();
-                //.stream()
-                //.mapToInt(m -> m.getTransactionList().size())
+    public int showAmountOfBankTransactions() {
+        int numberOfAllTransactions = 0;
+        for(int i = 0; i < cashMachinesList.size(); i++) {
+            numberOfAllTransactions += cashMachinesList.get(i).getTransactionList();
+        }
+        return numberOfAllTransactions;
+    }
+
+    public int getSizeOfCashMachinesInBank() {
+        return cashMachinesList.size();
+    }
+
+    public double showTotalSaldo() {
+        double totalSaldo = 0;
+        for(int i = 0; i <cashMachinesList.size(); i++) {
+            totalSaldo += cashMachinesList.get(i).showSaldo();
+        }
+        return totalSaldo;
     }
 }
