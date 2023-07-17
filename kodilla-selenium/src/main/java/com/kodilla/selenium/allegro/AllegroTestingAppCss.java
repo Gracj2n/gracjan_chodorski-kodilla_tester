@@ -30,14 +30,18 @@ public class AllegroTestingAppCss {
         //WebElement alertAccept = webDriver.findElement(By.id("sp-cc-accept"));
         //WebElement searchField = webDriver.findElement(By.id("twotabsearchtextbox"));
 
-        WebElement alertAccept = webDriver.findElement(By.xpath("//button[@data-testid='accept_home_view_action']"));
+        //WebElement alertAccept = webDriver.findElement(By.xpath("//button[@data-testid='accept_home_view_action']"));
+        WebElement alertAccept = webDriver.findElement(By.cssSelector("button[data-role=\"accept-consent\"]"));
         alertAccept.click();
 
-        WebElement searchField = webDriver.findElement(By.xpath("//input[@data-role='search-input']"));
+        //ebElement searchField = webDriver.findElement(By.xpath("//input[@data-role='search-input']"));
+        WebElement searchField = webDriver.findElement(By.cssSelector("input[data-role=\"search-input\"]"));
         searchField.sendKeys("Mavic mini");
 
-        WebElement firstProduct = webDriver.findElement(By.xpath("//a[@href=\"/listing?string=dji%20mavic%20mini\"]"));
-        WebElement secondProduct = webDriver.findElement(By.xpath("//a[@href=\"/listing?string=dji%20mavic%20mini%202\"]"));
+        //WebElement firstProduct = webDriver.findElement(By.xpath("//a[@href=\"/listing?string=dji%20mavic%20mini\"]"));
+        //WebElement secondProduct = webDriver.findElement(By.xpath("//a[@href=\"/listing?string=dji%20mavic%20mini%202\"]"));
+        WebElement firstProduct = webDriver.findElement(By.cssSelector("a[href=\"/listing?string=dji%20mavic%20mini\"]"));
+        WebElement secondProduct = webDriver.findElement(By.cssSelector("a[href=\"/listing?string=dji%20mavic%20mini%202\"]"));
 
         List<WebElement> productList = new ArrayList<>();
         productList.add(firstProduct);
@@ -47,6 +51,5 @@ public class AllegroTestingAppCss {
         System.out.println(secondProduct.getText());
         System.out.println(productList.get(0).getText());
         System.out.println(productList.get(1).getText());
-
     }
 }
