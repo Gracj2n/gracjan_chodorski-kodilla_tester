@@ -18,7 +18,25 @@ public class CashMachine {
                 .sum();
     }
 
+    public int sumOfDeposits() {
+        return transactionList
+                .stream()
+                .filter(n -> n.getValue() > 0)
+                .toList()
+                .size();
+    }
+    public int sumOfWithdrawls() {
+        return transactionList
+                .stream()
+                .filter(n -> n.getValue() < 0)
+                .toList()
+                .size();
+    }
     public int getTransactionList() {
         return transactionList.size();
+    }
+
+    public List<Transaction> getTransactions() {
+        return transactionList;
     }
 }

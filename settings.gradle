@@ -15,4 +15,5 @@ include 'soapui-project'
 include 'kodilla-selenium'
 include 'kodilla-login-selenium'
 include 'kodilla-login-selenium'
+include 'kodilla-cucumber'
 

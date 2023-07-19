@@ -30,4 +30,38 @@ public class Bank {
         }
         return totalSaldo;
     }
+
+    public int sumOfDeposits() {
+        return cashMachinesList
+                .stream()
+                .mapToInt(n -> n.sumOfDeposits())
+                .sum();
+    }
+
+    public int sumOfWithdrawls() {
+        return cashMachinesList
+                .stream()
+                .mapToInt(n -> n.sumOfWithdrawls())
+                .sum();
+    }
+
+    public double averageOfDeposits() {
+        return cashMachinesList
+                .stream()
+                .flatMap(n -> n.getTransactions().stream())
+                .filter(n -> n.getValue() > 0)
+                .mapToDouble(n -> n.getValue())
+                .average()
+                .getAsDouble();
+    }
+
+    public double averageOfWithdrawls() {
+        return cashMachinesList
+                .stream()
+                .flatMap(n -> n.getTransactions().stream())
+                .filter(n -> n.getValue() < 0)
+                .mapToDouble(n -> n.getValue())
+                .average()
+                .getAsDouble();
+    }
 }
