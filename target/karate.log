@@ -122,3 +122,46 @@ Given Number to check is 0
 no step-definition method match found for: Number to check is 0
 kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
 14:02:05.812 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature
+19:55:56.842 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+19:55:57.005 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689875757003
+19:55:57.017 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 9
+19:55:57.428 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:11
+Given I have deposited $200 in my wallet
+no step-definition method match found for: I have deposited $200 in my wallet
+kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:11
+19:55:57.741 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature
+20:00:09.909 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+20:00:10.070 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689876010068
+20:00:10.081 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 9
+20:00:10.497 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:11
+Given I have deposited $200 in my wallet
+no step-definition method match found for: I have deposited $200 in my wallet
+kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:11
+20:00:10.817 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature
+20:10:12.510 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+20:10:12.662 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689876612659
+20:10:12.672 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27
+20:10:13.085 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:29
+Given I have deposited $0 in my wallet
+no step-definition method match found for: I have deposited $0 in my wallet
+kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:29
+20:10:13.404 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature
+20:11:08.086 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+20:11:08.244 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689876668242
+20:11:08.670 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:5
+Given I have deposited $200 in my wallet
+no step-definition method match found for: I have deposited $200 in my wallet
+kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:5
+20:11:08.676 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:11
+Given I have deposited $500 in my wallet
+no step-definition method match found for: I have deposited $500 in my wallet
+kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:11
+20:11:08.678 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:17
+Given I have deposited $0 in my wallet
+no step-definition method match found for: I have deposited $0 in my wallet
+kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:17
+20:11:08.681 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:23
+Given I have deposited $150 in my wallet
+no step-definition method match found for: I have deposited $150 in my wallet
+kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature:23
+20:11:09.025 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/wallet/cash_withdrawal.feature
