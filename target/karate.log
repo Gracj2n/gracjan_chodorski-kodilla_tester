@@ -16,3 +16,109 @@ Given today is first day of August
 no step-definition method match found for: today is first day of August
 kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature:11
 09:11:21.259 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature
+09:42:54.030 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+09:42:54.188 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689838974186
+09:42:54.909 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/numberChecker/is_number_.feature
+09:43:35.100 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+09:43:35.246 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689839015244
+09:43:35.700 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_.feature:6
+When Is 3 by 3?
+no step-definition method match found for: Is 3 by 3?
+kodilla-cucumber/src/test/resources/numberChecker/is_number_.feature:6
+09:43:35.982 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/numberChecker/is_number_.feature
+10:12:49.232 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+10:12:49.384 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689840769382
+10:12:49.797 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:5
+Given Number to check is three
+no step-definition method match found for: Number to check is three
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:5
+10:12:50.115 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature
+10:26:44.775 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+10:41:55.601 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+10:41:55.751 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689842515749
+10:41:56.171 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:5
+Given Number to check is 2
+no step-definition method match found for: Number to check is 2
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:5
+10:41:56.489 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature
+14:01:21.891 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+14:01:22.047 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689854482045
+14:01:22.058 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:01:22.481 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 3
+no step-definition method match found for: Number to check is 3
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:01:22.483 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:01:22.486 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 5
+no step-definition method match found for: Number to check is 5
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:01:22.487 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:01:22.489 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 15
+no step-definition method match found for: Number to check is 15
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:01:22.490 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:01:22.492 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 9
+no step-definition method match found for: Number to check is 9
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:01:22.493 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:01:22.495 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 12
+no step-definition method match found for: Number to check is 12
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:01:22.495 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:01:22.498 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 10
+no step-definition method match found for: Number to check is 10
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:01:22.498 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:01:22.500 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 375
+no step-definition method match found for: Number to check is 375
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:01:22.852 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature
+14:02:04.854 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+14:02:05.010 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689854525009
+14:02:05.021 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.427 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 3
+no step-definition method match found for: Number to check is 3
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:02:05.428 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.431 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 5
+no step-definition method match found for: Number to check is 5
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:02:05.432 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.435 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 15
+no step-definition method match found for: Number to check is 15
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:02:05.435 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.438 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 9
+no step-definition method match found for: Number to check is 9
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:02:05.438 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.441 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 12
+no step-definition method match found for: Number to check is 12
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:02:05.441 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.443 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 10
+no step-definition method match found for: Number to check is 10
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:02:05.444 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.447 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 375
+no step-definition method match found for: Number to check is 375
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:02:05.447 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 14
+14:02:05.450 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+Given Number to check is 0
+no step-definition method match found for: Number to check is 0
+kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature:16
+14:02:05.812 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/numberChecker/is_number_divisible.feature

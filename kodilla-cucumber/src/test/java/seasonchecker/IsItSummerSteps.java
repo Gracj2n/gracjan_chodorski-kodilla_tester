@@ -18,9 +18,7 @@ public class IsItSummerSteps {
         this.today = MonthDay.of(12, 31);
     }
     @Given("today is first day of August")
-    public void today_is_first_day_of_august() {
-        this.today = MonthDay.of(7, 1);
-    }
+    public void today_is_first_day_of_august() { this.today = MonthDay.of(7, 1); }
     @Given("today is second day of January")
     public void today_is_second_day_of_january() {
         this.today = MonthDay.of(1, 2);
@@ -32,7 +30,8 @@ public class IsItSummerSteps {
     @Given("today is 24th day of June")
     public void today_is_24th_day_of_june() {
         this.today = MonthDay.of(6, 24);
-    }@Given("today is 27th day of July")
+    }
+    @Given("today is 27th day of July")
     public void today_is_27th_day_of_july() {
         this.today = MonthDay.of(7, 27);
     }
