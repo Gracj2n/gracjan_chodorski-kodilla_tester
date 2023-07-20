@@ -1,4 +1,5 @@
 package seasonchecker;
+
 import org.junit.platform.suite.api.*;
 
 @Suite

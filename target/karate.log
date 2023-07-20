@@ -1,0 +1,18 @@
+09:07:02.953 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+09:07:03.111 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+09:07:03.526 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature:5
+Given today is last day of December
+no step-definition method match found for: today is last day of December
+kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature:5
+09:07:03.835 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature
+09:11:20.345 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+09:11:20.510 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1689837080508
+09:11:20.921 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature:5
+Given today is last day of December
+no step-definition method match found for: today is last day of December
+kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature:5
+09:11:20.925 [main]  ERROR com.intuit.karate - kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature:11
+Given today is first day of August
+no step-definition method match found for: today is first day of August
+kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature:11
+09:11:21.259 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) kodilla-cucumber/src/test/resources/seasonchecker/is_it_summer.feature
