@@ -1,7 +1,7 @@
 package wallet;
 
 public class Wallet {
-    private int balance;
+    private int balance = 0;
 
     public Wallet() {
     }

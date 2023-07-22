@@ -14,21 +14,6 @@ Feature: Cash Withdrawal
 
   Scenario: Successful withdrawal from a wallet in credit
 
-    Given I have deposited $0 in my wallet
-    When I request $10
-    Then $10 should be dispensed
-
-  Scenario: Successful withdrawal from a wallet in credit
-
     Given I have deposited $150 in my wallet
     When I request $0
     Then $0 should be dispensed
-
-  Scenario: Successful withdrawal from a wallet in credit
-
-    Given I have deposited $0 in my wallet
-    When I request $1
-    Then $1 should be dispensed
-
-
-

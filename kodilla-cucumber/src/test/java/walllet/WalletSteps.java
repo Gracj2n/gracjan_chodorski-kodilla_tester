@@ -16,6 +16,7 @@ public class WalletSteps {
     @Given("I have deposited ${int} in my wallet")
     public void i_have_deposited_$_in_my_wallet(Integer creditValue) {
         wallet.deposit(creditValue);
+        assertEquals(creditValue, wallet.getBalance());
     }
     @When("I request ${int}")
     public void i_request_$(Integer requestValue) {
