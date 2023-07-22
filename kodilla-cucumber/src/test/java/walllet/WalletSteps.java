@@ -27,5 +27,9 @@ public class WalletSteps {
     public void $_should_be_dispensed(Integer expectedValue) {
         assertEquals(expectedValue, cashSlot.getContents());
     }
+    @Then("Balance of my wallet should be ${int}")
+    public void balance_of_my_wallet_should_be(Integer expectedBalance) {
+       assertEquals(expectedBalance, wallet.getBalance());
+    }
 }
 
