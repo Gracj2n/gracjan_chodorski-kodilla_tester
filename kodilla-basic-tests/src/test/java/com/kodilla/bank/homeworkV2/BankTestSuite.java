@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class BankTestSuite {
+public class BankTestSuite {
     Bank bank = new Bank();
     CashMachine cashMachine1 = new CashMachine();
     CashMachine cashMachine2 = new CashMachine();

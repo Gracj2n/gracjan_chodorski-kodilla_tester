@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PrimeCheckerTestSuite {
 
-    private PrimeChecker checker = new PrimeChecker();
+    private final PrimeChecker checker = new PrimeChecker();
     private static int count = 0;
 
     @Test

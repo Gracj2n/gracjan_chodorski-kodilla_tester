@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CashMachineTestSuite {
+public class CashMachineTestSuite {
     CashMachine cashMachine = new CashMachine();
     Transaction transaction1 = new Transaction(1500);
     Transaction transaction2 = new Transaction(-2500);

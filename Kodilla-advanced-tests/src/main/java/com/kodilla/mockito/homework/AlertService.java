@@ -24,6 +24,7 @@ public class AlertService {
 
         civilianAlertMap.put(civilian, removeSubscription);
     }
+
     public void removeAllAlert(Civilian civilian) {
         civilianAlertMap.remove(civilian);
     }
@@ -33,6 +34,7 @@ public class AlertService {
                 .filter(e -> e.getValue().contains(alert))
                 .forEach(e -> e.getKey().receive(alert));
     }
+
     public void sendAlertToAll(Alert alert) {
         this.civilianAlertMap.entrySet().stream()
                 .forEach(e -> e.getKey().receive(alert));
