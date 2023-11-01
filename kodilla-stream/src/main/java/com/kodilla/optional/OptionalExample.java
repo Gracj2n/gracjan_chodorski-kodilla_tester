@@ -4,7 +4,7 @@ import com.kodilla.stream.User;
 
 import java.util.Optional;
 
-public class OptionalExample {
+public class  OptionalExample {
     public static void main(String[] args) {
         User user = new User(null, 30, 100, "Test");
 
