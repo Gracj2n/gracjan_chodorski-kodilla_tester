@@ -15,7 +15,7 @@ class UsersManagerTest {
         //given
         UsersManager usersManager = new UsersManager();
         //when
-        List<String> userNames = UsersManager.filterChemistGroupUsernames();
+        List<String> userNames = usersManager.filterChemistGroupUsernames();
         //then
         List<String> expectedNames = new ArrayList<>();
         expectedNames.add(new String("Walter White"));
